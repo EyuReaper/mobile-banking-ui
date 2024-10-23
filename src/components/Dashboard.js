@@ -28,13 +28,14 @@ const Dashboard = () => {
 
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-6">Account Overview</h1>
-      <div className="bg-white p-6 rounded-lg shadow-lg">
+      <h1 className="text-3xl font-bold text-center mb-6 ">Account Overview</h1>
+      <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg ">
         <h2 className="text-xl">Total Balance: <span className="text-green-500">${account.balance}</span></h2>
-        <p className="text-gray-600">Account Holder: {account.holderName}</p>
+        <p className="text-white-600">Account Holder: <span class name="text-amber-500">{account.holderName}</span></p>
+         
       </div>
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold">Recent Transactions</h2>
+      <div className="mt-8 border-radius-4 bg-gray-400 p-6  rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold "> Transactions</h2>
         <ul className="mt-4 space-y-4">
           {transactions.map((transaction) => (
             <li key={transaction.id} className="border-b pb-2">

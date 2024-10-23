@@ -2,3 +2,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.box {
+ width: 320px;
+ height: 580px;
+ border-radius: 10px;
+ overflow: hidden;
+ position: relative;
+ background-color: #faf4f1;
+ box-shadow: 0 0 0px 12px rgba(0, 0, 0, 0.1), 0 0 1px 1px rgba(0, 0, 0, 0.1),
+ inset 0 0 0 12px rgba(255, 255, 255, 1);
+ margin: 30px auto;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Use the font from your design */
+    font-size:xx-small;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #8f24ed 30%, #107cb3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 600px) {
+        display: block;
+    }
+
+     /* Light background */
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Allow main content to expand */
+    padding: 20px; /* Add padding around the main content */
+  }
+  
+  header {
+    background-color: #4CAF50; /* Primary color for header */
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.5em; /* Header font size */
+    text-align: center;
+  }
+  
+  button {
+    background-color: #FFC107; /* Secondary color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #ffca28; /* Lighter shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }

@@ -9,8 +9,9 @@ import './index.css';
 
 const App = () => {
   return (
+    <div className='box'>
     <Router>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col ">
         <Header />
         <main className="flex-grow">
           <Routes>
@@ -23,6 +24,7 @@ const App = () => {
         </main>
       </div>
     </Router>
+  </div>
   );
 };
 
