@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAccount } from '../store/actions';
 import { getAccountDetails, getTransactions } from '../services/bankingApi';
+import { apiUrl } from '../services/api.service';
+import axios from 'axios';
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -11,9 +13,24 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchAccountDetails = async () => {
-      const response = await getAccountDetails();
-      dispatch(setAccount(response.data));
-    };
+      try{
+        const response = await axios.get(apiUrl);
+        console.log('Fetch Transactions Response:',response.data);
+      }catch (error){
+        console.error('Error fetching account details:', error);
+        if(error.response) {
+          console.error('Status Code:', error.response.status);
+          console.error('Response Data:', error.response.data);
+        }else if (error.request) {
+          console.error('Request:', error.request);
+        }else {
+          console.error('Error:', error.message);
+        }
+      }
+      };
+      // const response = await getAccountDetails();
+      // dispatch(setAccount(response.data));
+    
 
     const fetchTransactions = async () => {
       const response = await getTransactions();
@@ -27,8 +44,8 @@ const Dashboard = () => {
   }, [dispatch]);
 
   return (
-    <div className="p-4 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-6 ">Account Overview</h1>
+    <div className="p-4 bg-gray-100 min-h-screen overflow-scroll-hidden">
+      <h1 className="text-xl font-bold text-center mb-6 ">Account Overview</h1>
       <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg ">
         <h2 className="text-xl">Total Balance: <span className="text-green-500">${account.balance}</span></h2>
         <p className="text-white-600">Account Holder: <span class name="text-amber-500">{account.holderName}</span></p>
@@ -48,6 +65,7 @@ const Dashboard = () => {
           ))}
         </ul>
       </div>
+
     </div>
   );
 };

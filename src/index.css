@@ -35,7 +35,7 @@ body {
   .app-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full height */
+    min-height: 150vh; /* Full height */
   }
   
   .main-content {
@@ -64,4 +64,9 @@ body {
   button:hover {
     background-color: #ffca28; /* Lighter shade on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  i{
+    width: 24px;
+    height: 24px;
+    color:#faf4f1
   }
