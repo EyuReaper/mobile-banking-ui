@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Mobile Banking UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Mobile Banking UI project! This application provides a user-friendly interface for managing banking transactions, viewing account balances, and handling notifications. Built with React and Redux, this project aims to deliver a seamless experience for users on both desktop and mobile devices.
 
-## Available Scripts
+## Screenshots
 
-In the project directory, you can run:
+![./images/mobile banking ui screenshot][]
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Mobile Banking UI](#mobile-banking-ui)
+  - [Screenshots](#screenshots)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **View Account Balance**: Users can easily check their current balance.
+- **Transaction History**: A detailed list of transactions, including descriptions, amounts, and dates.
+- **Notifications**: Users receive notifications about account activities.
+- **Responsive Design**: The UI adapts seamlessly to different screen sizes, making it user-friendly on mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React**: A JavaScript library for building user interfaces.
+- **Redux**: A predictable state container for managing application state.
+- **Tailwind CSS**: A utility-first CSS framework for styling the application.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **React Router**: For handling navigation and routing within the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started with the project, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository**:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/yourusername/mobile-banking-ui.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Navigate to the project directory**:
+    ```bash
+    cd mobile-banking-ui
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Install dependencies**:
+    ```bash
+    npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the development server**:
+    ```bash
+    npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+Once the application is running, you can:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- View your account balance on the dashboard.
+- Navigate to the transaction history to see all your past transactions.
+- Click on the notification bell to check for any alerts or messages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and commit them.
+- Push your branch to your forked repository.
+- Create a pull request detailing your changes.
