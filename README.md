@@ -3,7 +3,7 @@
 Welcome to the Mobile Banking UI project! This application provides a user-friendly interface for managing banking transactions, viewing account balances, and handling notifications. Built with React and Redux, this project aims to deliver a seamless experience for users on both desktop and mobile devices.
 
 ## preview
-![screen_shot](mobilebankinguiscreenshot.png)
+![screen_shot](images/mobile%20banking%20ui%20screenshot.png)
 
 
 ## Table of Contents
